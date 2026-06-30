@@ -1,7 +1,9 @@
 #sum
 
-print("Enter 2 numbers")
+print("Enter 3 numbers")
 a = int (input())
 b = int( input ())
-sum = a+b 
-print ("Sum of entered numbers are : "+ str(sum))
+c = int( input ())
+avg = (a+b+c)/3
+print ("Average of entered numbers are : "+ str(avg))
+
