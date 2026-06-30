@@ -1,9 +1,13 @@
 #sum
 
-print("Enter 3 numbers")
+print("Enter 2 numbers")
 a = int (input())
 b = int( input ())
-c = int( input ())
-avg = (a+b+c)/3
-print ("Average of entered numbers are : "+ str(avg))
 
+print ("values of entered numbers are : "+ str(a)  +"|" + str(b))
+
+t=a
+a=b
+b=t
+
+print("after swap the values are : "+ str(a) +"|" + str(b))
