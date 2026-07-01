@@ -1,12 +1,17 @@
 print('Hi,  number check')
 print('Enter a number :')
-''' num = int(input())
-# if else 
-if num%2 == 0:
-    print("even")
-else : 
-    print("odd") '''
+num = int(input())
 
-#else if (nested)
+# #else if 
+# if num%2 == 0:
+#     print("even")
+# else : 
+#     print("odd") 
 
-print
+#else if (nested )
+if num > 0 : 
+    print("+ve")
+elif num == 0 : 
+    print("zero")
+else: 
+    print("-ve")
