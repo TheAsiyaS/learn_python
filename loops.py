@@ -49,4 +49,3 @@ def longest_palindrome(s: str) -> str:
             
     return s[start:end + 1]
 
-longest_palindrome("malayalam")
