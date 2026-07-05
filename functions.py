@@ -1,14 +1,13 @@
-def greeting():
-    numlist = []
+def greeting(*numbers):
+    
     print("Hi! Welcome back")
+    sum = 0
+    for i in range(0,len(numbers)):
+        sum = sum + numbers[i]
 
-    num1 = int(input("Enter first number: "))
-    num2 = int(input("Enter second number: "))
+    return sum
 
-    numlist.append(num1)
-    numlist.append(num2)
 
-    return num1, num2
 
-numbers = greeting()
-print(numbers)
+sums = greeting(12,1,3)
+print(sums)
