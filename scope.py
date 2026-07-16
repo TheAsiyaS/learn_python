@@ -11,3 +11,5 @@ def scope_check():
 
 
 scope_check()
+
+# scope learning
