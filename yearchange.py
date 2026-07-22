@@ -33,6 +33,11 @@ class userdata :
     def yearchnage(cls): # how class method works for whole class not for specific object
         cls.yearClassVariable =  cls.yearClassVariable+1
 
+    @staticmethod # method can't change the data inside class , just showing
+    def greeting (): 
+        print("Hi, welcome!!")
+
+userdata.greeting()
 x = userdata('asi',20,"kollam")
 y = userdata('abc',8,"kochi")
 x.display()
