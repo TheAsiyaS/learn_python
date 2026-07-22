@@ -15,7 +15,6 @@ class userdata :
         print("year right now : "+ str(self.yearClassVariable))
     def agechange (self):
         self.age = self.age + 1
-        self.yearClassVariable = self.yearClassVariable + 1
         print("-------------age change -------------")
         print('name : '+ self.name)
         print('age : '+ str (self.age))
@@ -30,8 +29,14 @@ class userdata :
         print('location : '+ self.place)
         print("year right now : "+ str(self.yearClassVariable))
 
+    @classmethod
+    def yearchnage(cls): # how class method works for whole class not for specific object
+        cls.yearClassVariable =  cls.yearClassVariable+1
+
 x = userdata('asi',20,"kollam")
 y = userdata('abc',8,"kochi")
 x.display()
+userdata.yearchnage()
+print ("year chnaged -----------")
 x.agechange()
 x.locationchange("Tvm")
