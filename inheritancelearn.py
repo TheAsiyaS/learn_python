@@ -9,10 +9,11 @@ class student (person) :  # child class
         super().__init__(name) # passing name data to parent 
         self.id = id # id added to object(self , memory)
 
-    def display(self):
+    def display(self): # Here method is OVERRIDE from parent-class , same name (diplay)
          super().display() #call parent method display
          print("student id is : "+ str(self.id))
 
 
 x = student("Asiya" , 1243) # object create for student 
 x.display() # with that object we call sub_class
+
